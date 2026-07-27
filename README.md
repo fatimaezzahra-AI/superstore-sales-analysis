@@ -13,7 +13,7 @@ This project analyzes retail sales data from the **Superstore** dataset using **
 ---
 
 ##  Project Structure
-  text
+  ''' text
 ├── Superstore.csv      # Raw dataset
 ├── convert.py          # Python script to convert CSV to SQLite DB
 ├── superstore.db       # SQLite Database
