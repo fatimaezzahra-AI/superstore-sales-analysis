@@ -1,28 +1,44 @@
-# Superstore Sales & Profit Performance Analysis
+# Superstore Business Intelligence & ML Dashboard
 
-##  Project Overview
-This project analyzes retail sales data from the **Superstore** dataset using **Python** and **SQL (SQLite)**. The goal is to uncover key business insights regarding overall revenue, category profitability, customer performance, and regional sales.
+## Project Overview
+This project is an end-to-end Data Analytics and Machine Learning web application built for the Superstore dataset. It integrates SQL, Python, interactive visual data exploration, and a Random Forest Machine Learning model into a unified Streamlit dashboard.
 
----
-
-##  Tech Stack & Tools
-* **Python**: Data loading and converting CSV data into a SQLite database (`pandas`, `sqlite3`).
-* **SQL (SQLite)**: Data aggregation, filtering, and metric calculations.
-* **VS Code**: Development environment.
+The application enables business stakeholders to evaluate profitability, track sales performance, examine discount-profit correlations, and predict estimated margins for upcoming deals in real time.
 
 ---
 
-##  Project Structure
-  ''' text
-├── Superstore.csv      # Raw dataset
-├── convert.py          # Python script to convert CSV to SQLite DB
-├── superstore.db       # SQLite Database
-├── analysis.sql        # SQL queries for exploratory data analysis
-└── README.md           # Project documentation
+## Key Features
 
-##  Key Business Insights & Recommendations
+* **Interactive KPIs**: Dynamic tracking of Total Sales, Total Profit, Average Discount, and Total Order Volume.
+* **Global Filters**: Real-time multi-attribute filtering across regions and product categories.
+* **Statistical Analysis**:
+  * **Correlation Matrix**: Quantifies mathematical relationships between core variables.
+  * **OLS Trendline Regression**: Visualizes price elasticity and discount impact on margins.
+* **Machine Learning Profit Simulator**:
+  * Trained on a Random Forest Regressor algorithm with live performance metrics (R² score and Mean Absolute Error).
+  * Interactive input panel allowing users to simulate deal scenarios and estimate profit or loss.
+* **Categorical Segmentation**: Aggregated sales and profit distributions structured via Plotly chart components.
+* **Custom UI Architecture**: Clean HTML/CSS integration designed for structured presentation and readability.
 
-* **High-Margin Categories:** Technology products yield the highest profit margins. Marketing efforts should prioritize this category.
-* **Furniture Margin Issue:** While Furniture generates high sales, its profit margin is low due to heavy discounting. Re-evaluating discount strategies is recommended.
-* **Regional Optimization:** The Central region underperforms in total profit compared to West and East. Shipping costs and localized pricing should be audited.
-* **Customer Retention:** A small segment of top customers drives a significant portion of profits. Introducing a VIP retention program is advised.
+---
+
+## Tech Stack & Dependencies
+
+* **Dashboard Framework**: Streamlit, Custom HTML/CSS
+* **Data Visualization**: Plotly Express
+* **Machine Learning & Analytics**: Scikit-Learn, Statsmodels, NumPy
+* **Data Processing**: Pandas
+* **Database**: SQLite (sqlite3)
+* **Development Environment**: VS Code, Git
+
+---
+
+## Repository Structure
+
+```text
+├── Superstore.csv       # Raw dataset
+├── convert.py           # ETL script converting CSV records into SQLite DB
+├── superstore.db        # Relational database storing sales data
+├── analysis.sql         # SQL queries for exploratory data analysis
+├── app.py               # Main application entry point and ML pipeline
+└── README.md            # Technical documentation
