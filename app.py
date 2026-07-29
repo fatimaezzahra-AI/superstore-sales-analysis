@@ -93,12 +93,12 @@ with st.sidebar:
 
 filtered_df = df[(df['Region'].isin(region_filter)) & (df['Category'].isin(category_filter))]
 
-# 5. الهيدر الرئيسي (Title Section)
+# 5. (Title Section)
 st.title(" Superstore Business Intelligence")
 st.markdown("Advanced Analytics, Machine Learning Predictions & Statistical Insights")
 st.markdown("---")
 
-# 6. بطاقات الـ KPIs المخصصة بـ CSS
+# 6.  KPIs ـ CSS
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
@@ -135,7 +135,7 @@ with col4:
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# 7. الـ Tabs المنظمة
+# 7.  Tabs 
 tab1, tab2, tab3 = st.tabs([" Statistics & Correlations", " Machine Learning Model", " Category & Segment Breakdown"])
 
 # TAB 1: STATISTICS
